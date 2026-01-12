@@ -1,0 +1,6 @@
+[int]$num = Read-Host "Introduce un numero "
+If ($num % 2 -eq 0){
+    Write-Host "El numero $num es par"
+}Else {
+    Write-Host "El numero $num es impar"
+}

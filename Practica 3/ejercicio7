@@ -1,0 +1,7 @@
+$passw = "contraseña"
+$x = Read-Host "Introduce una contraseña: "
+If ($passw -ieq $x  ){
+    Write-Host "Contraseña correcta"
+}Else {
+    Write-Host "Contraseña incorrecta"
+}

@@ -1,0 +1,7 @@
+Write-Host "Comprobar existencia "
+$ruta = Read-Host "Introduce la ruta de un fichero o carpeta "
+If (Test-Path $ruta ){
+    Write-Host "Si existe"
+}Else {
+    Write-Host "No existe"
+}

@@ -1,0 +1,34 @@
+$tipo = Read-Host "¿Quieres pizza vegetariana? (S/N)")
+
+if ($tipo.ToUpper() -eq "S") {
+    Write-Host "Ingredientes vegetarianos:"
+    Write-Host "1. Pimiento"
+    Write-Host "2. Tofu"
+    
+    $opcion = [int](Read-Host "Elige un ingrediente (1-2)"))
+    
+    if ($opcion -eq 1) {
+        $ingrediente = "Pimiento"
+    } else {
+        $ingrediente = "Tofu"
+    }
+
+    Write-Host "Pizza vegetariana con mozzarella, tomate y $ingrediente"
+} else {
+    Write-Host "Ingredientes no vegetarianos:"
+    Write-Host "1. Peperoni"
+    Write-Host "2. Jamon"
+    Write-Host "3. Salmon"
+    
+    $opcion = [int](Read-Host "Elige un ingrediente (1-3)"))
+    
+    if ($opcion -eq 1) {
+        $ingrediente = "Peperoni"
+    } elseif ($opcion -eq 2) {
+        $ingrediente = "Jamon"
+    } else {
+        $ingrediente = "Salmon"
+    }
+    
+    Write-Host "Pizza no vegetariana con mozzarella, tomate y $ingrediente"
+}

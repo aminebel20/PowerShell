@@ -1,0 +1,6 @@
+[int]$num = Read-Host "Introduce un numero "
+If ($num -ge 18){
+    Write-Host "Es mayor de edad"
+}Else {
+    Write-Host "No es mayor de edad"
+}

@@ -1,0 +1,17 @@
+$puntuacion = [double](Read-Host "Introduce tu puntuacion (0.0, 0.4, 0.6 o más)")
+
+if ($puntuacion -eq 0.0) {
+    Write-Host "Nivel: Inaceptable"
+    $dinero = 2400 * $puntuacion
+    Write-Host "Dinero recibido: $dinero €"
+} elseif ($puntuacion -eq 0.4) {
+    Write-Host "Nivel: Aceptable"
+    $dinero = 2400 * $puntuacion
+    Write-Host "Dinero recibido: $dinero €"
+} elseif ($puntuacion -ge 0.6) {
+    Write-Host "Nivel: Meritorio"
+    $dinero = 2400 * $puntuacion
+    Write-Host "Dinero recibido: $dinero €"
+} else {
+    Write-Host "Puntuacion no valida"
+}

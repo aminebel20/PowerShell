@@ -1,0 +1,15 @@
+# ejercicio2.ps1
+[int]$num1 = Read-Host "Introduce primer numero"
+[int]$num2 = Read-Host "Introduce segundo numero"
+
+$suma = $num1 + $num2
+$resta = $num1 - $num2
+$multi = $num1 * $num2
+$div = $num1 / $num2
+$resto = $num1 % $num2
+
+Write-Host "Suma: $suma"
+Write-Host "Resta: $resta"
+Write-Host "Multiplicacion: $multi"
+Write-Host "Division: $div"
+Write-Host "Resto: $resto"

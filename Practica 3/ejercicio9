@@ -1,0 +1,13 @@
+$renta = [int](Read-Host "Introduce tu renta anual (€)")
+
+if ($renta < 10000) {
+    Write-Host "Tipo impositivo: 5%"
+} elseif ($renta >= 10000 -and $renta < 20000) {
+    Write-Host "Tipo impositivo: 15%"
+} elseif ($renta >= 20000 -and $renta < 35000) {
+    Write-Host "Tipo impositivo: 20%"
+} elseif ($renta >= 35000 -and $renta < 60000) {
+    Write-Host "Tipo impositivo: 30%"
+} else {
+    Write-Host "Tipo impositivo: 45%"
+}

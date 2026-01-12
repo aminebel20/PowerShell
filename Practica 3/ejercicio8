@@ -1,0 +1,11 @@
+$nombre = Read-Host "Introduce tu nombre"
+$sexo = Read-Host "Introduce tu sexo (H/M)"
+
+# Obtener primera letra del nombre
+$primeraLetra = $nombre[0]
+
+if (($sexo -eq "M" -and $primeraLetra -lt "M") -or ($sexo -eq "H" -and $primeraLetra -gt "N")) {
+    Write-Host "Perteneces al Grupo A"
+} else {
+    Write-Host "Perteneces al Grupo B"
+}

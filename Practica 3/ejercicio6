@@ -1,0 +1,6 @@
+$ruta = Read-Host "Introduce la ruta del directorio "
+If (Test-Path $ruta -PathType container  ){
+    Get-ChildItem -Path $ruta -Recurse
+}Else {
+    Write-Host "No existe o no es un directorio"
+}

@@ -1,0 +1,7 @@
+# ejercicio3.ps1
+[double]$horas = Read-Host "Introduce horas trabajadas"
+[double]$coste = Read-Host "Introduce coste por hora"
+
+$salario = $horas * $coste
+
+Write-Host "El salario es: $salario €"

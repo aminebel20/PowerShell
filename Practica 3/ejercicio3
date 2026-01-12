@@ -1,0 +1,9 @@
+[int]$num1 = Read-Host "Introduce primer numero "
+[int]$num2 = Read-Host "Introduce segundo numero "
+If ($num1 -gt $num2){
+    Write-Host "$num1 es mayor que $num2"
+}Elseif ($num1 -eq $num2) {
+    Write-Host "Son iguales"
+}Else {
+    Write-Host "$num1 es menor que $num2"
+}
