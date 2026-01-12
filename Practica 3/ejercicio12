@@ -1,6 +1,6 @@
 $tipo = Read-Host "¿Quieres pizza vegetariana? (S/N)")
 
-if ($tipo.ToUpper() -eq "S") {
+if ($tipo -ieq "S") {
     Write-Host "Ingredientes vegetarianos:"
     Write-Host "1. Pimiento"
     Write-Host "2. Tofu"
