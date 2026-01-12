@@ -1,5 +1,0 @@
-# ejercicio1.ps1
-Write-Host "Hola $env:USERNAME"
-Write-Host "Directorio:$(gl)"
-Write-Host "Dominio: $env:USERDOMAIN"
-Write-Host "Equipo: $env:COMPUTERNAME"
